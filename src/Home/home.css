@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    background: black;
+    min-height: 20vh;
+    max-height :1000vh;
+    padding: 200px 0px 100px 100px;
+    background-size: cover;
+}
+section p {
+    height: 60px;
+}
+
+.home-content button {
+    background: red;
+    width: 160px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 20px 0px 20px 0px ;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 20px 10px 40px 0px;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    font-weight: 600;
+}
+.home-content button::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0px;
+    background: #000000;
+    transition: 1s;
+    z-index: -1;
+}
+.home-content button:hover{
+    transition: 1s;
+    border-color: rgb(255, 0, 0);
+}
+.home-content .learn::before{
+    background: red;
+}
+.home-content .learn:hover{
+    border-color: rgb(0, 0, 0);
+    transition: 1s;
+}
+.home-content button:hover::before{
+    width:100%;
+}
+.home-content button.learn{
+    background: #000;
+    border: 1px solid red;
+    margin-left: 40px;
+}
+.home-content{
+    width: 50%;
+    /* margin: 10%; */
+    height: 400px;
+}
+.heading{
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 600;
+    font-family: "Barlow", sans-serif;
+}
+.color-change{
+    color: red;
+}
+.info-me{
+    color: white;
+    margin: 10px 0px;
+    width: 85%;
+}
+.social-media{
+    width: 160px;
+    height: 40px;
+    background: #000;
+    margin-top: 30px;
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+    align-items: center;
+}
+.social-media a {
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .7s;
+}
+.social-media a:hover{
+    border-color: red;
+    background: black;
+}
+.home-content img{
+    transition: .5s;
+}
+.social-media a:hover img{
+    filter: brightness(0) saturate(100%) invert(42%) sepia(99%) saturate(7467%) hue-rotate(355deg) brightness(94%) contrast(124%);
+}
+
+
+/* media  */
+@media (max-width: 950px) {
+    .home-content{
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    #home{
+        padding-left: 0px;
+        padding-right: 0px;
+        /* text-align: center; */
+    }
+    .home-content{
+        width: 90%;
+        margin: auto;
+    }
+    .info .heading{
+        font-size: 2.4rem;
+    }
+    .home-content button {
+        width: 130px;
+        height: 40px;
+        margin-right: 0px;
+        font-size: 1rem;
+    }
+    .social-media{
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+}

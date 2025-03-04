@@ -1,0 +1,49 @@
+/* card.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    border: 2px solid red;
+    margin: 0px 10px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px;
+    transition: all 1s;
+    font-family: 'Barlow', sans-serif;
+}
+.card:hover{
+    border: 2px dotted red;
+}
+.card:hover .img{
+    background: rgb(36, 35, 35);
+}
+.card .img{
+    background: red;
+    margin-right: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+.card .img img{
+    width: 70%;
+    /* background: #000; */
+    height: 70%;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(2%) hue-rotate(25deg) brightness(108%) contrast(101%);
+}
+.card .info .head{
+    font-size: 1.5rem;
+}
+.card .info .data{
+    margin-top: 10px;
+    color: rgb(192, 186, 186);
+}
+@media (max-width: 600px){
+    .card{
+        margin-top: 20px;
+    }
+}

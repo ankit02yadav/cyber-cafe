@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header{
+    width: 100vw;
+    height: 60px;
+    background: #000;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 0px 10px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(80deg, rgb(187, 0, 0),black);
+    position: fixed;
+    z-index: 99;
+}
+img{
+    height: 90%;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+ul li a:hover{
+    color: red;
+}
+@media (max-width: 600px) {
+    ul li{
+        font-size: .9rem;
+    }
+}

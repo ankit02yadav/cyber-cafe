@@ -1,0 +1,42 @@
+.scroll-text{
+    height: 20vh;
+    background: #000;
+    /* border: 2px solid red; */
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: .5px rgba(255, 0, 0, 0.549);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 10rem;
+    position: relative;
+}
+.texxt{
+    position: absolute;
+    /* left: -81%; */
+    width: max-content;
+    animation: move 4s linear infinite;
+}
+@keyframes move {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: -81%;
+    }
+}
+
+@media (max-width: 600px){
+    .scroll-text{
+        -webkit-text-stroke: .5px rgba(255, 0, 0, 0.549);
+        font-size: 4rem;
+    }
+    @keyframes move {
+        0%{
+            left: 0%;
+        }
+        100%{
+            left: -135%;
+        }
+    }
+}

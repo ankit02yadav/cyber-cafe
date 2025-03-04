@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about{
+    min-height: 100vh;
+    max-height: 300vh;
+    padding: 7% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.support{
+    /* border: 2px solid red; */
+    height: 130px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.know-me{
+    margin: 0px 10px ;
+}
+.know-me button{
+    width: 160px;
+    height: 40px;
+    background: red;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid red;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+.best-services{
+    margin: 0px 10px;
+}
+.know-more{
+    border-radius: 0px;
+}
+.know-more::before{
+    display: none;
+}
+.basic-info{
+    color: white;
+    margin: 20px 0px;
+}
+.ticks4 ul{
+    list-style: disc;
+}
+.ticks4 ul li{
+    color: white;
+    width: 300px;
+    font-size:1rem;
+    position: relative;
+}
+.ticks4 ul li::before{
+    content: " ";
+    position: absolute;
+    top: 40%;
+    left: -10px;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+.bar{
+    margin: 0px 0px 20px 0px;
+}
+.call-now{
+    /* clip-path: polygon(30% 0, 100% 0, 100% 54%, 70% 100%, 0 100%, 0% 50%); */
+    /* border-radius: 40px 0px 40px 0px; */
+    border-radius: 0px;
+    transition: 1s;
+}
+.call-now:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.bar-box h2{
+    font-size: 1rem;
+    color: white;
+}
+.bar-box .bar{
+    width: 60%;
+    height: 15px;
+    background: #122228;
+    margin: 10px 0px;
+    border-radius: 50px;
+}
+.bar .percentage{
+    height: 100%;
+    width: 90%;
+    background: red;
+    border-radius: 50px;
+    position: relative;
+}
+.bar .count{
+    position: absolute;
+    right: 0;
+    top: -27px;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.bar .percentage2{
+    width: 97%;
+}
+.best-services{
+    margin-top: 60px;
+}
+.color-white{
+    color: white;
+}
+.info-services{
+    margin-top: 5px;
+}
+.container{
+    /* border: 2px solid red; */
+    /* margin: 20px 0px; */
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    overflow: hidden;
+}
+.container .box{
+    height: 300px;
+    border: 2px solid red;
+    margin: 0px 20px;
+    border-radius: 5px;
+    width: 270.6px;
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    transition: .4s;
+}
+.box:nth-child(1){
+    margin-left: 0px;
+}
+.box:nth-child(4){
+    margin-right: 0px;
+}
+.box .head{
+    background: red;
+    width: 80%;
+    height: 40px;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.box:hover{
+    transform: translateY(-30px);
+}
+.box .logo-box{
+    margin: 30px 0px 30px 0px;
+    width: 50px;
+    height: 50px;
+    background: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+.box .logo-box::before{
+    content: " ";
+    position: absolute;
+    width: 265px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 3px solid red;
+    z-index: -1;
+}
+.box .info{
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 600px){
+    .text-info .heading{
+        font-size: 2.3rem;
+    }
+    .bar-box .bar{
+        width: 100%;
+    }
+    .best-services .heading{
+        font-size: 2.3rem;
+    }
+    .best-services .container{
+        display: flex;
+        flex-direction: column;
+    }
+    .best-services .container .box{
+        margin: 0px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .best-services .container .box:hover{
+        transform: translateY(0px);
+    }
+    section#about{
+        max-height: 900vh;
+    }
+    #about .support{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 370px;
+    }
+    .know-me{
+        margin-top: 10px;
+    }
+}
