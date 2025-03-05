@@ -10,3 +10,65 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+Cyber Cafe
+
+Live Demo: Cyber Cafe
+
+About the Project
+
+Cyber Cafe is my first project using React. It is a simple web application that showcases my understanding of React, HTML, and CSS.
+
+Features
+
+Built with React for dynamic UI updates
+
+Styled with CSS for a clean and modern design
+
+Hosted on Vercel for easy access
+
+
+Technologies Used
+
+React.js
+
+HTML
+
+CSS
+
+
+Installation
+
+If you want to run this project locally, follow these steps:
+
+1. Clone the repository:
+
+git clone <your-repo-url>
+
+
+2. Navigate to the project directory:
+
+cd cyber-cafe
+
+
+3. Install dependencies:
+
+npm install
+
+
+4. Start the development server:
+
+npm start
+
+Future Improvements
+
+Adding more interactive features
+
+Implementing a backend for user authentication
+
+Enhancing UI/UX with animations
+
+
+Connect with Me
+
+If you have any suggestions or feedback, feel free to reach out!
