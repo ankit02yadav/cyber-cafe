@@ -7,7 +7,7 @@ function Home() {
                 <div className="info">
                     <div className="heading">
                         Provide <span className='color-change'>Fastest</span> Service From  
-                        <span className='color-change'>Verma Docs</span>
+                        <span className='color-change'> Verma Docs</span>
                     </div>
                     <div className="info-me">
                     At our Internet Café, we provide expert assistance with job search, form filling, and online applications. While we don't offer computer rentals, our dedicated team ensures you receive top-notch support for all your online form-related needs. Visit us for professional, reliable, and efficient service.
