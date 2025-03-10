@@ -13,7 +13,7 @@ function About() {
             <div className="know-me">
                 <button className="know-more">Know About Us</button>
                 <div className="text-info">
-                    <div className="heading">Gautam Docs <span className='color-change'>Not Just a Luxury, But a Necessity for Cyber Cafes</span> </div>
+                    <div className="heading">Verma Docs <span className='color-change'>Not Just a Luxury, But a Necessity for Cyber Cafes</span> </div>
                     <div className="basic-info">
                         computing has become a cornerstone of modern connectivity, transform-ing how <br></br><span className='color-change'>we access information, communicate, and entertain ourselves.</span>
                     </div>
