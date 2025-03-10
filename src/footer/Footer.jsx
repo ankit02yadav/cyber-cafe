@@ -39,15 +39,15 @@ function SubFooter() {
                         </div>
                     </div>
                     <div className="contact-text">
-                        <div className="logo">LOGO</div>
-                        <div className="site-info">Empowering the Digital Experience at Cyber Cafe Gautam</div>
+                        <div className="logo">Verma</div>
+                        <div className="site-info">Empowering the Digital Experience at Cyber Cafe Verma</div>
                         <div className="acc-info">Good <span className='color-change'>Process </span>is not a service it's a gateway to the future.</div>
                         <a target='_blank' href="https://ankit-yadav2.github.io/portfolio/">Creater's <span className='color-change'>Portfolio</span></a>
                     </div>
                 </div>
             </section>
             <footer>
-                Copyright &copy; All Right Reserved By Gautam Docs.
+                Copyright &copy; All Right Reserved By Verma Docs.
             </footer>
         </>
     );
